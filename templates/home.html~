@@ -1,8 +1,0 @@
-{% extends 'layout.html' %}
-  
-{% block title %}Página principal{% endblock %}
-  
-{% block content %}
-<h1 class="h2">Dashboard</h1>
-<p>Bienvenido, {{ username }}!</p>
-{% endblock %}
