@@ -2,6 +2,7 @@ from flask import Flask, request, session, redirect, url_for, render_template, f
 import psycopg2 
 import psycopg2.extras
 import re 
+import os
 from werkzeug.security import generate_password_hash, check_password_hash
  
 app = Flask(__name__)
@@ -15,8 +16,8 @@ app.wsgi_app = ProxyFix(
 
 params = {
     'dbname': 'flask_db',
-    'user': 'dpreciado3',
-    'password': 'contraseña',
+    'user': os.environ['DB_USERNAME'],
+    'password': os.environ['DB_PASSWORD'],
     'host': '10.0.0.4'
 }
  
