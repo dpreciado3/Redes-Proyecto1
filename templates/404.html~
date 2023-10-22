@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block title %}Página no encontrada{% endblock %}
+{% block body %}
+  <h1>Página no encontrada</h1>
+  <p>Estabas buscando algo, pero ese algo no existe.
+  <p><a href="{{ url_for('login') }}">Ve a un mejor lugar</a>
+{% endblock %}
