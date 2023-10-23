@@ -18,7 +18,8 @@ params = {
     'dbname': 'flask_db',
     'user': os.environ['DB_USERNAME'],
     'password': os.environ['DB_PASSWORD'],
-    'host': '10.0.0.4'
+    'host': '10.0.0.4',
+    'sslmode': 'require'
 }
  
 conn = psycopg2.connect(**params)
